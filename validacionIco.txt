@@ -1,0 +1,17 @@
+    public Interfaz() {     //metodo constructor
+        initComponents();
+        this.setLocationRelativeTo(null);
+        AWTUtilities.setWindowOpaque(this, false);
+    }
+    public Image getIconImage(){
+        Image retValue = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("imagenes/tec.png"));
+        return retValue;
+    }
+    public void noCaracteres(java.awt.event.KeyEvent evt){  //campos en digitos
+        char car = evt.getKeyChar();
+        if ((car<'0' || car>'9') && (car<',' || car>'.')){  //estructura condicional
+        evt.consume(); {
+            
+        }
+    }
+    }
